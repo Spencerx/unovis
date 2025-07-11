@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser'
 // Area
 import { NonStackedAreaChartModule } from '@unovis/shared/examples/non-stacked-area-chart/non-stacked-area-chart.module'
 import { StackedAreaModule } from '@unovis/shared/examples/stacked-area-chart/stacked-area-chart.module'
+import { StackedAreaWithAttributesModule } from '@unovis/shared/examples/stacked-area-chart-with-attributes/stacked-area-chart-with-attributes.module'
 import { StepAreaChartModule } from '@unovis/shared/examples/step-area-chart/step-area-chart.module'
 
 // Bars
@@ -50,12 +51,14 @@ import { CrosshairStackedBarModule } from '@unovis/shared/examples/crosshair-sta
 import { BrushGroupedBarModule } from '@unovis/shared/examples/brush-grouped-bar/brush-grouped-bar.module'
 import { FreeBrushScattersModule } from '@unovis/shared/examples/free-brush-scatters/free-brush-scatters.module'
 import { BaselineAreaChartModule } from '@unovis/shared/examples/baseline-area-chart/baseline-area-chart.module'
+import { BasicPlotbandModule } from '@unovis/shared/examples/basic-plotband/basic-plotband.module'
 
 @Component({
   selector: 'app-component',
   template: `
     <!-- Area -->
     <stacked-area-chart></stacked-area-chart>
+    <stacked-area-chart-with-attributes></stacked-area-chart-with-attributes>
     <non-stacked-area-chart></non-stacked-area-chart>
     <baseline-area-chart></baseline-area-chart>
     <step-area-chart></step-area-chart>
@@ -113,8 +116,8 @@ export class AppComponent {
     BrowserModule, BasicGroupedBarModule, BasicLeafletMapModule, BasicLineChartModule, MultiLineChartModule,
     TopojsonMapModule, StackedBarChartModule, BrushGroupedBarModule, BasicScatterPlotModule, SizedScatterPlotModule, FreeBrushScattersModule, NonStackedAreaChartModule,
     BasicTimelineModule, BasicSankeyModule, ExpandableSankeyModule, BasicGraphModule, LeafletFlowMapModule,
-    ForceLayoutGraphModule, AdvancedLeafletMapModule, StackedAreaModule, ParallelLayoutGraphModule, ElkLayeredGraphModule,
-    DataGapLineChartModule, CrosshairStackedBarModule, BaselineAreaChartModule, StepAreaChartModule, SunburstChartModule,
+    ForceLayoutGraphModule, AdvancedLeafletMapModule, StackedAreaModule, StackedAreaWithAttributesModule, ParallelLayoutGraphModule, ElkLayeredGraphModule,
+    DataGapLineChartModule, CrosshairStackedBarModule, BaselineAreaChartModule, StepAreaChartModule, SunburstChartModule, BasicPlotbandModule,
   ],
   bootstrap: [AppComponent],
   providers: [BrowserModule],

@@ -7,6 +7,7 @@ const imports = [
   defineAsyncComponent(() => import('@unovis/shared/examples/baseline-area-chart/baseline-area-chart.vue')),
   defineAsyncComponent(() => import('@unovis/shared/examples/non-stacked-area-chart/non-stacked-area-chart.vue')),
   defineAsyncComponent(() => import('@unovis/shared/examples/stacked-area-chart/stacked-area-chart.vue')),
+  defineAsyncComponent(() => import('@unovis/shared/examples/stacked-area-chart-with-attributes/stacked-area-chart-with-attributes.vue')),
   defineAsyncComponent(() => import('@unovis/shared/examples/basic-grouped-bar/basic-grouped-bar.vue')),
   defineAsyncComponent(() => import('@unovis/shared/examples/basic-leaflet-map/basic-leaflet-map.vue')),
   defineAsyncComponent(() => import('@unovis/shared/examples/leaflet-flow-map/leaflet-flow-map.vue')),
@@ -32,6 +33,7 @@ const imports = [
   defineAsyncComponent(() => import('@unovis/shared/examples/basic-donut-chart/basic-donut-chart.vue')),
   defineAsyncComponent(() => import('@unovis/shared/examples/shaped-scatter-plot/shaped-scatter-plot.vue')),
   defineAsyncComponent(() => import('@unovis/shared/examples/basic-annotations/basic-annotations.vue')),
+  defineAsyncComponent(() => import('@unovis/shared/examples/basic-plotband/basic-plotband.vue')),
 ]
 </script>
 
